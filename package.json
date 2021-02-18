@@ -12,7 +12,7 @@
     "build": "movies-api build"
   },
   "keywords": [],
-  "author": "Juan_Carlos <jcdelrioe@gmail.com>",
+  "author": "Juan_Carlos Del Rio <jcdelrioe@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^9.1.1",
@@ -47,7 +47,10 @@
   "nyc": {
     "all": true,
     "include": [
-      "routes", "services", "lib", "utils"
+      "routes",
+      "services",
+      "lib",
+      "utils"
     ]
   }
 }
