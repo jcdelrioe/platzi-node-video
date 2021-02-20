@@ -49,7 +49,7 @@ function userMoviesApi(app) {
         const createdUserMovieId = await userMoviesService.createUserMovie({
           userMovie,
         });
-        req.status(201).json({
+        res.status(201).json({
           data: createdUserMovieId,
           message: 'user movie created',
         });
@@ -70,7 +70,7 @@ function userMoviesApi(app) {
         const deletedUserMovieId = await userMoviesService.deleteUserMovie({
           userMovieId,
         });
-        req.status(200).json({
+        res.status(200).json({
           data: deletedUserMovieId,
           message: 'user movie deleted',
         });
